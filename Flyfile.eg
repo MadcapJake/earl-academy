@@ -32,6 +32,7 @@ gen html = ->
 gen css = ->
    yield chain this:
       @source: paths.css
+      @concat: "all.css"
       @target: "."
 
 gen bundle = ->
