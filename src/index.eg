@@ -63,7 +63,7 @@ view = state -> {
                hr %
                h3 % 'Hello {first-name} {last-name}'
                pre %
-                  code.earlgrey %
+                  code.lang-earlgrey %
                      """
 require:
    split
