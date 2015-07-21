@@ -1,5 +1,5 @@
 globals:
-   register-language
+   hljs
 
 
 regexp_numr = R```
@@ -25,7 +25,7 @@ regexp_lowprio1 = '(=|=>|->|%)(?![a-zA-Z$_0-9-])'
 regexp_lowprio2 = '(with|where|each)(?![a-zA-Z$_0-9-])'
 
 
-register-language{.earlgrey} with {hljs} -> {
+hljs.register-language{.earlgrey} with {hljs} -> {
 
    contains = {
 
