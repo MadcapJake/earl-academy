@@ -1,0 +1,43 @@
+paths = {
+   html = {
+      "src/*.hmtl"
+   }
+   css = {
+      "src/css/*.css"
+   }
+   eg = {
+      "src/*.eg"
+   }
+}
+
+require: earlify
+
+provide: default, clear, html, css, bundle
+
+gen default = ->
+   yield this.tasks.clear()
+   yield this.tasks.html()
+   yield this.tasks.css()
+   yield this.tasks.bundle()
+
+gen clear = ->
+   yield this.clear("index.html")
+   yield this.clear("index.js")
+
+gen html = ->
+   yield chain this:
+      @source: paths.html
+      @target: "."
+
+gen css = ->
+   yield chain this:
+      @source: paths.css
+      @target: "."
+
+gen bundle = ->
+   yield chain this:
+      @source: paths.eg
+      @browse: { transform = {earlify} }
+      @uglify:
+      @concat: "index.js"
+      @target: "."
