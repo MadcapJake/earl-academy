@@ -1,6 +1,6 @@
 paths = {
    html = {
-      "src/*.hmtl"
+      "src/*.html"
    }
    css = {
       "src/css/*.css"
