@@ -16339,13 +16339,13 @@ process.umask = function() { return 0; };
 },{"earlgrey-runtime/5":119}],118:[function(require,module,exports){
 
 "use strict";require("earlgrey-runtime/5");var $0$0 = undefined;var run$0 = undefined;var Rx$0 = undefined;var $1$0 = undefined;var h$0 = undefined;var makeDOMDriver$0 = undefined;var Observable$0 = undefined;var egh$0 = undefined;var footer$0 = undefined;var intent$0 = undefined;var model$0 = undefined;var view$0 = undefined;var main$0 = undefined;$0$0 = require("@cycle/core");run$0 = getProperty($0$0, "run", "@cycle/core");Rx$0 = getProperty($0$0, "Rx", "@cycle/core");$1$0 = require("@cycle/dom");h$0 = getProperty($1$0, "h", "@cycle/dom");makeDOMDriver$0 = getProperty($1$0, "makeDOMDriver", "@cycle/dom");Observable$0 = Rx$0.Observable;egh$0 = function egh(ph$0$0) {
-  var m$0 = undefined;var acc$0 = undefined;var temp$0 = undefined;var tags$0 = undefined;var props$1 = undefined;var children$1 = undefined;var props$0 = undefined;var children$0 = undefined;var enode$0 = undefined;var s$0 = undefined;var $$42$0 = undefined;var $$43$0 = undefined;var $$44$0 = undefined;var t0$0 = undefined;var t1$0 = undefined;var t2$0 = undefined;t0$0 = ph$0$0;if (typeof t0$0 === "string") {
+  var m$0 = undefined;var acc$0 = undefined;var temp$0 = undefined;var tags$0 = undefined;var props$1 = undefined;var children$1 = undefined;var props$0 = undefined;var children$0 = undefined;var enode$0 = undefined;var s$0 = undefined;var $$88$0 = undefined;var $$89$0 = undefined;var $$90$0 = undefined;var t0$0 = undefined;var t1$0 = undefined;var t2$0 = undefined;t0$0 = ph$0$0;if (typeof t0$0 === "string") {
     s$0 = t0$0;return s$0;
   } else {
-    if (($$43$0 = getChecker(ENode)(t0$0)) && (($$44$0 = ___hasprop(t0$0, "tags")) && (t1$0 = t0$0.tags, Array.isArray(t1$0) && (t2$0 = t1$0.length, t2$0 === 0 && (___hasprop(t0$0, "props") && (props$0 = t0$0.props, ___hasprop(t0$0, "children"))))))) {
+    if (($$89$0 = getChecker(ENode)(t0$0)) && (($$90$0 = ___hasprop(t0$0, "tags")) && (t1$0 = t0$0.tags, Array.isArray(t1$0) && (t2$0 = t1$0.length, t2$0 === 0 && (___hasprop(t0$0, "props") && (props$0 = t0$0.props, ___hasprop(t0$0, "children"))))))) {
       children$0 = t0$0.children;enode$0 = t0$0;return enode$0.toString();
     } else {
-      if ($$44$0 && (tags$0 = t0$0.tags, ___hasprop(t0$0, "props") && (props$1 = t0$0.props, ___hasprop(t0$0, "children")))) {
+      if ($$90$0 && (tags$0 = t0$0.tags, ___hasprop(t0$0, "props") && (props$1 = t0$0.props, ___hasprop(t0$0, "children")))) {
         children$1 = t0$0.children;return h$0(tags$0.join(""), props$1, (acc$0 = [], temp$0 = null, m$0 = null, (function () {
           var _iteratorNormalCompletion = true;
           var _didIteratorError = false;
@@ -16392,7 +16392,7 @@ process.umask = function() { return 0; };
   var $it$5 = undefined;var $it$4 = undefined;var $it$7 = undefined;var $it$6 = undefined;return { firstName$: ($it$4 = actions$0, $it$5 = $it$4.firstName$, $it$5.startWith("")), lastName$: ($it$6 = actions$0, $it$7 = $it$6.lastName$, $it$7.startWith("")) };
 };view$0 = function view(state$0) {
   return { DOM: Observable$0.combineLatest(state$0.firstName$, state$0.lastName$, function (first__minus__name$0, last__minus__name$0) {
-      return egh$0(ENode(["div"], {}, [ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "first-name" } }, "First Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "first-name", placeholder: "First Name" } }, [])]), ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "last-name" } }, "Last Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "last-name", placeholder: "Last Name" } }, [])]), ENode(["hr"], {}, []), ENode(["h3"], {}, ENode([], {}, ["Hello ", first__minus__name$0, " ", last__minus__name$0])), ENode(["pre"], {}, ENode(["code", ".lang-earlgrey"], {}, "\nrequire:\n   split\n   zlib -> create-gzip\n   stream-combiner as combine\n   through2 as through\n                     ")), ENode(["app-footer"], { attributes: { key: "footer" } }, [])]));
+      return egh$0(ENode(["div"], {}, [ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "first-name" } }, "First Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "first-name", placeholder: "First Name" } }, [])]), ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "last-name" } }, "Last Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "last-name", placeholder: "Last Name" } }, [])]), ENode(["hr"], {}, []), ENode(["h3"], {}, ENode([], {}, ["Hello ", first__minus__name$0, " ", last__minus__name$0])), ENode(["pre"], {}, ENode(["code", ".earlgrey"], {}, "\nrequire:\n   split\n   zlib -> create-gzip\n   stream-combiner as combine\n   through2 as through\n                     ")), ENode(["app-footer"], { attributes: { key: "footer" } }, [])]));
     }) };
 };main$0 = function main(responses$1) {
   return view$0(model$0(intent$0(responses$1)));
@@ -37274,13 +37274,13 @@ process.umask = function() { return 0; };
 },{"earlgrey-runtime/5":119}],118:[function(require,module,exports){
 
 "use strict";require("earlgrey-runtime/5");var $0$0 = undefined;var run$0 = undefined;var Rx$0 = undefined;var $1$0 = undefined;var h$0 = undefined;var makeDOMDriver$0 = undefined;var Observable$0 = undefined;var egh$0 = undefined;var footer$0 = undefined;var intent$0 = undefined;var model$0 = undefined;var view$0 = undefined;var main$0 = undefined;$0$0 = require("@cycle/core");run$0 = getProperty($0$0, "run", "@cycle/core");Rx$0 = getProperty($0$0, "Rx", "@cycle/core");$1$0 = require("@cycle/dom");h$0 = getProperty($1$0, "h", "@cycle/dom");makeDOMDriver$0 = getProperty($1$0, "makeDOMDriver", "@cycle/dom");Observable$0 = Rx$0.Observable;egh$0 = function egh(ph$0$0) {
-  var m$0 = undefined;var acc$0 = undefined;var temp$0 = undefined;var tags$0 = undefined;var props$1 = undefined;var children$1 = undefined;var props$0 = undefined;var children$0 = undefined;var enode$0 = undefined;var s$0 = undefined;var $$340$0 = undefined;var $$341$0 = undefined;var $$342$0 = undefined;var t0$0 = undefined;var t1$0 = undefined;var t2$0 = undefined;t0$0 = ph$0$0;if (typeof t0$0 === "string") {
+  var m$0 = undefined;var acc$0 = undefined;var temp$0 = undefined;var tags$0 = undefined;var props$1 = undefined;var children$1 = undefined;var props$0 = undefined;var children$0 = undefined;var enode$0 = undefined;var s$0 = undefined;var $$294$0 = undefined;var $$295$0 = undefined;var $$296$0 = undefined;var t0$0 = undefined;var t1$0 = undefined;var t2$0 = undefined;t0$0 = ph$0$0;if (typeof t0$0 === "string") {
     s$0 = t0$0;return s$0;
   } else {
-    if (($$341$0 = getChecker(ENode)(t0$0)) && (($$342$0 = ___hasprop(t0$0, "tags")) && (t1$0 = t0$0.tags, Array.isArray(t1$0) && (t2$0 = t1$0.length, t2$0 === 0 && (___hasprop(t0$0, "props") && (props$0 = t0$0.props, ___hasprop(t0$0, "children"))))))) {
+    if (($$295$0 = getChecker(ENode)(t0$0)) && (($$296$0 = ___hasprop(t0$0, "tags")) && (t1$0 = t0$0.tags, Array.isArray(t1$0) && (t2$0 = t1$0.length, t2$0 === 0 && (___hasprop(t0$0, "props") && (props$0 = t0$0.props, ___hasprop(t0$0, "children"))))))) {
       children$0 = t0$0.children;enode$0 = t0$0;return enode$0.toString();
     } else {
-      if ($$342$0 && (tags$0 = t0$0.tags, ___hasprop(t0$0, "props") && (props$1 = t0$0.props, ___hasprop(t0$0, "children")))) {
+      if ($$296$0 && (tags$0 = t0$0.tags, ___hasprop(t0$0, "props") && (props$1 = t0$0.props, ___hasprop(t0$0, "children")))) {
         children$1 = t0$0.children;return h$0(tags$0.join(""), props$1, (acc$0 = [], temp$0 = null, m$0 = null, (function () {
           var _iteratorNormalCompletion = true;
           var _didIteratorError = false;
@@ -37327,7 +37327,7 @@ process.umask = function() { return 0; };
   var $it$5 = undefined;var $it$4 = undefined;var $it$7 = undefined;var $it$6 = undefined;return { firstName$: ($it$4 = actions$0, $it$5 = $it$4.firstName$, $it$5.startWith("")), lastName$: ($it$6 = actions$0, $it$7 = $it$6.lastName$, $it$7.startWith("")) };
 };view$0 = function view(state$0) {
   return { DOM: Observable$0.combineLatest(state$0.firstName$, state$0.lastName$, function (first__minus__name$0, last__minus__name$0) {
-      return egh$0(ENode(["div"], {}, [ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "first-name" } }, "First Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "first-name", placeholder: "First Name" } }, [])]), ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "last-name" } }, "Last Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "last-name", placeholder: "Last Name" } }, [])]), ENode(["hr"], {}, []), ENode(["h3"], {}, ENode([], {}, ["Hello ", first__minus__name$0, " ", last__minus__name$0])), ENode(["pre"], {}, ENode(["code", ".lang-earlgrey"], {}, "\nrequire:\n   split\n   zlib -> create-gzip\n   stream-combiner as combine\n   through2 as through\n                     ")), ENode(["app-footer"], { attributes: { key: "footer" } }, [])]));
+      return egh$0(ENode(["div"], {}, [ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "first-name" } }, "First Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "first-name", placeholder: "First Name" } }, [])]), ENode(["div", ".form-group"], {}, [ENode(["label"], { attributes: { htmlFor: "last-name" } }, "Last Name:"), ENode(["input", ".form-control"], { attributes: { type: "text", id: "last-name", placeholder: "Last Name" } }, [])]), ENode(["hr"], {}, []), ENode(["h3"], {}, ENode([], {}, ["Hello ", first__minus__name$0, " ", last__minus__name$0])), ENode(["pre"], {}, ENode(["code", ".earlgrey"], {}, "\nrequire:\n   split\n   zlib -> create-gzip\n   stream-combiner as combine\n   through2 as through\n                     ")), ENode(["app-footer"], { attributes: { key: "footer" } }, [])]));
     }) };
 };main$0 = function main(responses$1) {
   return view$0(model$0(intent$0(responses$1)));
