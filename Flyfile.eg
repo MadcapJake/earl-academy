@@ -6,7 +6,7 @@ paths = {
       "src/css/*.css"
    }
    bundle = {
-      "src/bundle.js"
+      "src/index.eg"
    }
 }
 
@@ -22,8 +22,8 @@ gen default = ->
 
 gen clear = ->
    yield this.clear("index.html")
-   yield this.clear("src/bundle.js")
    yield this.clear("index.js")
+   yield this.clear("all.css")
 
 gen html = ->
    yield chain this:
@@ -39,6 +39,7 @@ gen css = ->
 gen bundle = ->
    yield chain this:
       @source: paths.bundle
+      @browse: { transform = {earlify} }
       ;;@uglify:
       @concat: "index.js"
       @target: "."

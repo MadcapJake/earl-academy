@@ -1,6 +1,6 @@
 require:
    "@cycle/core" -> {run, Rx}
-   "@cycle/web" -> {h, makeDOMDriver}
+   "@cycle/dom" -> {h, makeDOMDriver}
 
 let Observable = Rx.Observable
 

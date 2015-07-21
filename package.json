@@ -4,7 +4,9 @@
   "description": "Learn the next generation language that compiles to JS.",
   "main": "index.js",
   "scripts": {
+    "bundle": "browserify -t earlify src/index.eg > src/bundle.js",
     "fly": "fly",
+    "build": "npm run bundle && sleep .1 && npm run fly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
@@ -18,9 +20,9 @@
     "node": ">= 0.11.0"
   },
   "devDependencies": {
-    "browserify": "^11.0.0",
     "earlify": "0.0.1",
     "fly": "^0.3.4",
+    "fly-browserify": "^0.1.1",
     "fly-uglify": "^0.3.0"
   },
   "dependencies": {
