@@ -1,0 +1,148 @@
+globals:
+   register-language
+
+
+regexp_numr = R```
+   {+d}, in "rR"
+   {+ in"A-Za-z0-9_"}
+   ?[".", {+ in "A-Za-z0-9_"}]
+```
+
+regexp_num = R```
+   {+ in "0-9_"}
+   ?[".", {+d}]
+   ?[in "eE", {? in "+-", + in "0-9_"}]
+```
+
+regexp_id = "[a-zA-Z$_](-?[a-zA-Z$_0-9])*"
+
+regexp_simpleop = "[+\\-*/~^<>=%&|?!@#.]+"
+regexp_wordop_raw = "(with|where|when|and|not|or|in|mod|each|as|of|is)"
+regexp_wordop = '({regexp_wordop_raw}(?![a-zA-Z$_0-9-]))'
+regexp_op = '{regexp_simpleop}|{regexp_wordop}'
+
+regexp_lowprio1 = '(=|=>|->|%)(?![a-zA-Z$_0-9-])'
+regexp_lowprio2 = '(with|where|each)(?![a-zA-Z$_0-9-])'
+
+
+register-language{.earlgrey} with {hljs} -> {
+
+   contains = {
+
+      {
+         class-name = .string
+         contains = {hljs.BACKSLASH_ESCAPE}
+         variants = {
+            {begin = '"""', end = '"""'}
+            {begin = "'''", end = "'''"}
+            {begin = '"', end = '"'}
+            {begin = "'", end = "'"}
+            {begin = '\\.{regexp_id}'}
+         }
+      }
+
+      {
+         class-name = .quote
+         contains = {hljs.BACKSLASH_ESCAPE}
+         begin = "`"
+         end = "`"
+      }
+
+      {
+         class-name = .member
+         begin = '@{regexp_id}'
+      }
+
+      {
+         class-name = .struct
+         begin = '#{regexp_id}'
+      }
+
+      {
+         class-name = .comment
+         begin = ";;"
+         end = R"$"
+      }
+
+      {
+         class-name = .punctuation
+         begin = R"[(){}\[\],;:]"
+      }
+
+      {
+         class-name = .operator
+         begin = regexp_lowprio1
+      }
+
+      {
+         class-name = .wordop
+         begin = regexp_lowprio2
+      }
+
+      {
+         begin = '({regexp_op}) *({regexp_id}) *(?![^:])'
+         contains = {
+            {
+               class-name = .operator
+               begin = regexp_op
+               end = ' *{regexp_id}'
+               return-end = true
+            }
+            {
+               begin = ' *{regexp_id}'
+            }
+         }
+         return-begin = true
+      }
+
+      {
+         begin = '{regexp_id} *:'
+         contains = {
+            {
+               class-name = .keyword
+               begin = '{regexp_id} *'
+            }
+            {
+               class-name = .punctuation
+               begin = ':'
+            }
+         }
+         return-begin = true
+      }
+
+      {
+         class-name = .wordop
+         begin = regexp_wordop
+      }
+
+      {
+         class-name = .keyword
+         begin = '{regexp_id} +(?!({regexp_simpleop}|{regexp_wordop_raw})( +|$|\n)|,|;| )'
+         end = '{regexp_id}:|'
+         exclude-end = true
+      }
+
+      {
+         class-name = .operator
+         begin = regexp_op
+      }
+
+      {
+         class-name = .keyword
+         begin = '(return|match|else|break|continue|yield|expr-value|chain|await)(?![a-zA-Z$_0-9-])'
+      }
+
+      {
+         begin = regexp_id
+      }
+
+      {
+         class-name = .number
+         variants = {
+            {begin = regexp_numr}
+            {begin = regexp_num}
+         }
+      }
+
+   }
+}

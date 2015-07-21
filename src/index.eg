@@ -62,6 +62,15 @@ view = state -> {
                      }
                hr %
                h3 % 'Hello {first-name} {last-name}'
+               pre %
+                  code.earlgrey %
+                     """
+require:
+   split
+   zlib -> create-gzip
+   stream-combiner as combine
+   through2 as through
+                     """
                app-footer %
                   attributes = { key = .footer }
 }
