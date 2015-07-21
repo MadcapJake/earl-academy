@@ -18,10 +18,9 @@
     "node": ">= 0.11.0"
   },
   "devDependencies": {
+    "browserify": "^11.0.0",
     "earlify": "0.0.1",
     "fly": "^0.3.4",
-    "fly-browserify": "^0.1.1",
-    "fly-earl": "^0.3.1",
     "fly-uglify": "^0.3.0"
   },
   "dependencies": {
