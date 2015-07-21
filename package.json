@@ -25,6 +25,8 @@
     "fly-uglify": "^0.3.0"
   },
   "dependencies": {
+    "@cycle/core": "^1.0.1",
+    "@cycle/dom": "^3.0.0",
     "earlgrey": "0.0.10",
     "koa": "^0.21.0",
     "koa-logger": "^1.3.0",
