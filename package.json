@@ -1,0 +1,11 @@
+{
+  "name": "earl-academy",
+  "version": "0.1.0",
+  "description": "Learn the next generation language that compiles to JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Russo",
+  "license": "MIT"
+}
