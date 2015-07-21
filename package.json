@@ -4,9 +4,7 @@
   "description": "Learn the next generation language that compiles to JS.",
   "main": "index.js",
   "scripts": {
-    "bundle": "browserify -t earlify src/index.eg > src/bundle.js",
     "fly": "fly",
-    "build": "npm run bundle && sleep .1 && npm run fly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
