@@ -72,7 +72,7 @@ require:
    through2 as through
                      """
                app-footer %
-                  attributes = { key = .footer }
+                  key = .footer
 }
 
 main = responses -> view(model(intent(responses)))
