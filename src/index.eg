@@ -64,6 +64,8 @@ view = state -> {
                h3 % 'Hello {first-name} {last-name}'
                pre %
                   code.javascript % "document.getElementById('demo').innerHTML = 'Hello JavaScript!'"
+               pre %
+                  code.earlgrey   % "if current: @push: '{JSON.stringify(current)}\n'"
                app-footer %
                   key = .footer
 }
