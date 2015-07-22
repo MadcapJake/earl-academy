@@ -63,10 +63,7 @@ view = state -> {
                hr %
                h3 % 'Hello {first-name} {last-name}'
                pre %
-                  code.javascript %
-                     """
-document.getElementById('demo').innerHTML = 'Hello JavaScript!'
-                     """
+                  code.javascript % "document.getElementById('demo').innerHTML = 'Hello JavaScript!'"
                app-footer %
                   key = .footer
 }
