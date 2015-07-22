@@ -63,13 +63,9 @@ view = state -> {
                hr %
                h3 % 'Hello {first-name} {last-name}'
                pre %
-                  code.earlgrey %
+                  code.javascript %
                      """
-require:
-   split
-   zlib -> create-gzip
-   stream-combiner as combine
-   through2 as through
+document.getElementById('demo').innerHTML = 'Hello JavaScript!'
                      """
                app-footer %
                   key = .footer
