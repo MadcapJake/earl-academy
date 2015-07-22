@@ -1,21 +1,12 @@
+require-macros:
+   earl-hyperscript -> [%]
 require:
-   "@cycle/core" -> {run, Rx}
-   "@cycle/dom" -> {h, makeDOMDriver}
+   "@cycle/core" as cycle
+   "@cycle/dom" -> makeDOMDriver
 
-let Observable = Rx.Observable
-
-egh = match ->
-   String? s -> s
-   ENode? {tags => {}, => props, => children} and enode -> enode.to-string()
-   ENode? {=> tags, => props, => children} ->
-      h(tags.join(""), props) with
-         children each child -> egh(child)
+let Observable = cycle.Rx.Observable
 
 ;; ================ App ==================
-footer = responses -> {
-   DOM = Observable.return:
-      egh: div % "=== footer ==="
-}
 
 intent = {=> DOM} -> {
    first-name$ = chain DOM:
@@ -38,43 +29,40 @@ view = state -> {
       state.first-name$
       state.last-name$
       (first-name, last-name) ->
-         egh:
-            div %
-               div.form-group %
-                  label %
-                     attributes = { html-for = "first-name" }
-                     "First Name:"
-                  input.form-control %
-                     attributes = {
-                        type = .text
-                        id = "first-name"
-                        placeholder = "First Name"
-                     }
-               div.form-group %
-                  label %
-                     attributes = { html-for = "last-name" }
-                     "Last Name:"
-                  input.form-control %
-                     attributes = {
-                        type = .text
-                        id = "last-name"
-                        placeholder = "Last Name"
-                     }
-               hr %
-               h3 % 'Hello {first-name} {last-name}'
-               pre %
-                  code.javascript % "document.getElementById('demo').innerHTML = 'Hello JavaScript!'"
-               pre %
-                  code.earlgrey   % "if current: @push: '{JSON.stringify(current)}\n'"
-               app-footer %
-                  key = .footer
+         div %
+            div.form-group %
+               label %
+                  attributes = { html-for = "first-name" }
+                  "First Name:"
+               input.form-control %
+                  attributes = {
+                     type = .text
+                     id = "first-name"
+                     placeholder = "First Name"
+                  }
+            div.form-group %
+               label %
+                  attributes = { html-for = "last-name" }
+                  "Last Name:"
+               input.form-control %
+                  attributes = {
+                     type = .text
+                     id = "last-name"
+                     placeholder = "Last Name"
+                  }
+            hr %
+            h3 % 'Hello {first-name} {last-name}'
+            pre %
+               code.javascript %
+                  "document.getElementById('demo').innerHTML = 'Hello JavaScript!'"
+            pre %
+               code.earlgrey %
+                  "if current: @push: '{JSON.stringify(current)}\n'"
 }
 
 main = responses -> view(model(intent(responses)))
 
-run main:
+cycle.run(main) with
    {
-      DOM = makeDOMDriver "#app": {
-         "app-footer" => footer
-      }
+      DOM = makeDOMDriver: "#app"
    }
