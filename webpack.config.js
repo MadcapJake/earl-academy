@@ -4,7 +4,6 @@ module.exports = {
   },
   output: {
     path: '../ega-gh-pages/',
-    // publicPath: '/assets/',
     filename: 'index.js'
   },
   module: {
