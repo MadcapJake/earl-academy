@@ -6,13 +6,15 @@ paths = {
       "src/css/*.css"
    }
    bundle = {
-      "src/*.eg"
+      "src/**/*.eg"
+      "!src/egcache/**/*.js"
    }
+   output = "public/"
 }
 
 require: earlify
 
-provide: default, clear, html, css, bundle
+provide: default, clear, html, css, bundle, watch
 
 gen default = ->
    yield this.tasks.clear()
@@ -21,25 +23,31 @@ gen default = ->
    yield this.tasks.bundle()
 
 gen clear = ->
-   yield this.clear("index.html")
-   yield this.clear("index.js")
-   yield this.clear("all.css")
+   yield this.clear(paths.output)
 
 gen html = ->
    yield chain this:
       @source: paths.html
-      @target: "."
+      @target: paths.output
 
 gen css = ->
    yield chain this:
       @source: paths.css
       @concat: "all.css"
-      @target: "."
+      @target: paths.output
 
 gen bundle = ->
    yield chain this:
       @source: paths.bundle
-      @browse: { transform = {earlify} }
-      ;;@uglify:
+      @browse: {
+         transform = {earlify}
+         debug = true
+      }
+      ;;@uglify()
       @concat: "index.js"
-      @target: "."
+      @target: paths.output
+
+gen watch = ->
+   yield this.watch(paths.bundle, .bundle)
+   yield this.watch(paths.html,   .html)
+   yield this.watch(paths.css,    .css)
