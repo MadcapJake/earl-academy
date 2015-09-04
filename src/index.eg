@@ -1,0 +1,98 @@
+require: mithril -> {prop, with-attr, mount, request, trust}
+require-macros: "./macros/mithril.eg" -> [%]
+globals: document
+
+;;class Post:
+;;   constructor(data) =
+;;      @title = prop: data.title
+;;      @slug  = prop: data.slug
+;;      @html  = prop: data.html
+
+;;class PostList:
+;;
+;;   constructor() =
+;;      @_posts = request with {method = .GET, url = "/api/posts"}
+;;
+;;   (^Symbol.iterator) = *-> this._posts() each post -> yield post
+;;
+;;   (^Symbol.contains) = post -> post in @_posts()
+;;
+;;   push = post -> @_posts().push(post)
+
+class ViewModel:
+
+   articles = {}
+
+var vm = undefined
+controller = -> vm = new ViewModel()
+
+view = ->
+   div %
+      div.row %
+         div.large-3.columns %
+            h1 % img[#logo] %
+               src = "https://breuleux.github.io/earl-grey/assets/earlgrey-text.svg"
+               width = 400
+               height = .auto
+         div.large-9.columns %
+            ul.button-group.right %
+               li % a.button %
+                  src = "#"
+                  "Home"
+               li % a.button %
+                  src = "#"
+                  "Articles"
+               li % a.button %
+                  src = "#"
+                  "Events"
+               li % a.button %
+                  src = "#"
+                  "About"
+
+      div.row %
+         div.large-12.columns %
+            h1.banner %
+               style = {
+                  font-family = '"Lucida Console", Monaco, monospace'
+                  position = .absolute
+                  color    = .white
+                  left     = "33%"
+                  top      = "12%"
+               }
+               "Earl Grey Academy"
+            img[#banner] % src = "img/eg-academy_banner.png"
+            hr %
+
+      div.row %
+         div.large-4.columns % img % src = "http://placehold.it/400x300&text=[img]"
+         div.large-8.columns %
+            h4 % "This is a content section"
+            div.row %
+               div.large-6.columns %
+                  p % "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef."
+               div.large-6.columns %
+                  p % "Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami."
+
+      div.row %
+         div.large-8.columns %
+            h4 % "This is a content section"
+            p % "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef."
+            p % "Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami."
+         div.large-4.columns %
+            img % src = "http://placehold.it/400x300&text=[img]"
+
+      footer.row %
+         div.large-12.columns %
+            hr %
+            div.row %
+               div.large-6.columns %
+                  p % "© Copyright Jake Russo et al."
+               div.large-6.columns %
+                  ul.inline-list.right %
+                     li % a % {href = "#", "Link 1"}
+                     li % a % {href = "#", "Link 2"}
+                     li % a % {href = "#", "Link 3"}
+                     li % a % {href = "#", "Link 4"}
+
+
+mount document.get-element-by-id(.app): {= controller, = view}
