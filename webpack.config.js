@@ -3,7 +3,7 @@ module.exports = {
     app: [ './src/index.eg' ]
   },
   output: {
-    path: './public',
+    path: '../ega-gh-pages/',
     // publicPath: '/assets/',
     filename: 'index.js'
   },
@@ -14,7 +14,7 @@ module.exports = {
   },
   devtool: "source-map",
   devServer: {
-    contentBase: "./public",
+    contentBase: "../ega-gh-pages/",
     colors: true,
     quiet: false,
     noInfo: false,
