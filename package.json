@@ -4,6 +4,7 @@
   "description": "Learn the next generation language that compiles to JS.",
   "main": "index.js",
   "scripts": {
+    "build:prod": "webpack -p",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
