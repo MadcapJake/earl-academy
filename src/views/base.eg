@@ -1,0 +1,62 @@
+require-macros: "../macros/mithril.eg" -> [%]
+module.exports = content ->
+   div %
+      div.row %
+         div.large-3.columns %
+            h1 % img[#logo] %
+               src = "https://breuleux.github.io/earl-grey/assets/earlgrey-text.svg"
+               width = 400
+               height = .auto
+         div.large-9.columns %
+            ul.button-group.right.round %
+               style = { margin-top = "1em"}
+               li % a.button.success %
+                  href = "#"
+                  "Home"
+               li % a.button %
+                  href = "#"
+                  "Articles"
+               li % a.button %
+                  href = "#"
+                  "Events"
+               li % a.button %
+                  href = "#"
+                  "About"
+
+      div.row %
+         div.large-12.columns %
+            div.banner %
+               style = {
+                  position = .absolute
+                  left     = "10%"
+                  top      = "15%"
+               }
+               h1 %
+                  style = {
+                     font-family = '"Lucida Console", Monaco, monospace'
+                     color = .white
+                  }
+                  "Earl Academy"
+               h5 %
+                  style = {
+                     font-family = '"Lucida Console", Monaco, monospace'
+                     color = .white
+                  }
+                  "Learn a powerful, flexible and fun compile-to-js language."
+            img[#banner] % src = "img/eg-academy_banner.png"
+            hr %
+
+      content
+
+      footer.row %
+         div.large-12.columns %
+            hr %
+            div.row %
+               div.large-6.columns %
+                  p % "© Copyright Jake Russo et al."
+               div.large-6.columns %
+                  ul.inline-list.right %
+                     li % a % {href = "#", "Home"}
+                     li % a % {href = "#", "Articles"}
+                     li % a % {href = "#", "Events"}
+                     li % a % {href = "#", "About"}
