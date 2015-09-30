@@ -7,15 +7,15 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            BlackDoc
-tagline:          Black Theme for Jekyll
-description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
-url:              https://github.com/karloespiritu/blackdoc
+title:            Earl Academy
+tagline:          Ex thea, scientia
+description:      "A collection of tutorials, reference materials and articles on the use of Earl Grey, a compile-to-js language."
+url:              https://madcapjake.github.io/earl-academy
 baseurl:          /
 
 author:
-  name:           'Karlo Espiritu'
-  url:            https://twitter.com/karloespiritu
+  name:           'Jake Russo'
+  url:            https://madcapjake.github.io
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          1.0.0
 
 github:
-  repo:           https://github.com/karloespiritu/blackdoc
+  repo:           https://github.com/madcapjake/earl-academy
