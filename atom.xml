@@ -4,7 +4,7 @@
  <title>Earl Academy</title>
  <link href="https://madcapjake.github.io/earl-academy/atom.xml" rel="self"/>
  <link href="https://madcapjake.github.io/earl-academy/"/>
- <updated>2015-09-29T21:48:52-05:00</updated>
+ <updated>2015-09-30T01:00:14-05:00</updated>
  <id>https://madcapjake.github.io/earl-academy</id>
  <author>
    <name>Jake Russo</name>
@@ -13,47 +13,82 @@
 
  
  <entry>
-   <title>Introducing BlackDoc</title>
-   <link href="https://madcapjake.github.io/earl-academy/2015/05/14/introducing-blackdoc/"/>
-   <updated>2015-05-14T00:00:00-05:00</updated>
-   <id>https://madcapjake.github.io/earl-academy/2015/05/14/introducing-blackdoc</id>
-   <content type="html">&lt;p&gt;BlackDoc is a two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that&amp;#39;s ideal for websites that require a master-detail layout for viewing of content. It&amp;#39;s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler, and the &lt;a href=&quot;http://hyde.getpoole.com&quot;&gt;Hyde&lt;/a&gt; theme.&lt;/p&gt;
+   <title>Welcome New Earlites!</title>
+   <link href="https://madcapjake.github.io/earl-academy/2015/09/29/introducing-earl-academy/"/>
+   <updated>2015-09-29T00:00:00-05:00</updated>
+   <id>https://madcapjake.github.io/earl-academy/2015/09/29/introducing-earl-academy</id>
+   <content type="html">&lt;p&gt;Earl Academy is a collection of tutorials, a reference manual, and a series of articles on tooling, interesting modules and the usage of &lt;a href=&quot;https://breuleux.github.io/earl-grey/&quot;&gt;Earl Grey&lt;/a&gt; in general.  &lt;/p&gt;
 
-&lt;p&gt;I needed a two-column layout with a scrolling sidebar to publish my &lt;a href=&quot;http://karloespiritu.com/cheatsheets&quot;&gt;code cheatsheets&lt;/a&gt;, and found the &lt;a href=&quot;http://hyde.getpoole.com&quot;&gt;Hyde&lt;/a&gt; Jekyll theme to be a good starting theme. To complement the color scheme of my main &lt;a href=&quot;http://karloespiritu.com&quot;&gt;website&lt;/a&gt;, I customised the theme to make it look great in black background and changed the sidebar to display scrolling content. I created this theme because I can&amp;#39;t seem to find any good Jekyll theme with a master-detail layout. Hopefully, someone will find this useful as well in their own projects.&lt;/p&gt;
+&lt;p&gt;Earl Grey is a highly expressive and fun compile-to-js language.  Its syntax is similar to Python&amp;#39;s but with a few unique elements and a heaping serving of JavaScript in that you can access Node&amp;#39;s standard API.  There is so much that I want to write about this lovely little language and I&amp;#39;d like to share this material with you!  Install Earl Grey, fire up the &lt;code&gt;earl&lt;/code&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&quot;&gt;REPL&lt;/a&gt; and hack on something in a fun futureproof language!&lt;/p&gt;
 
-&lt;h3&gt;Built on Poole&lt;/h3&gt;
+&lt;p&gt;Check out Earl Grey&amp;#39;s page on &lt;a href=&quot;https://breuleux.github.io/earl-grey/use.html&quot;&gt;use&lt;/a&gt; and read through the &lt;a href=&quot;https://breuleux.github.io/earl-grey/doc.html&quot;&gt;learn&lt;/a&gt; page while you&amp;#39;re there. This site will cover much of what&amp;#39;s there but it&amp;#39;s good to read the original source and then come here to solidify your knowledge.  I want this site to include details on the use of the node standard libraries and also popular npm packages (or often, how you can avoid using some common utility packages).&lt;/p&gt;
 
-&lt;p&gt;Poole is the Jekyll Butler, serving as a foundation for creating Jekyll themes. Poole-based themes, such as BlackDoc here, include the following:&lt;/p&gt;
+&lt;h3&gt;Goals&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mobile friendly design and development&lt;/li&gt;
-&lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
-&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
-&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
-&lt;li&gt;Syntax highlighting using Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;BlackDoc Features&lt;/h3&gt;
-
-&lt;p&gt;In addition to the features of &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt; and &lt;a href=&quot;http://hyde.getpoole.com&quot;&gt;Hyde&lt;/a&gt;, BlackDoc theme adds the following:&lt;/p&gt;
+&lt;p&gt;This site will contain a lot of material--but at first, it&amp;#39;s good to layout what the vision is.  If anyone is interested in contributing, this is a good overview of what needs to be done and perhaps I&amp;#39;ll even come back and update this with the current status of various elements of the site.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Scrolling sidebar with a thin scrollbar to allow displaying of numerous top-level content.&lt;/li&gt;
-&lt;li&gt;Elements and classes of the Hyde theme were updated to look great in black background. Check out the &lt;a href=&quot;styles&quot;&gt;Theme Styles&lt;/a&gt; to see the stylings used in the theme.&lt;/li&gt;
+&lt;li&gt;Tutorials
+
+&lt;ul&gt;
+&lt;li&gt;Basics (literal data, conditionals, functions)&lt;/li&gt;
+&lt;li&gt;Objects and Classes&lt;/li&gt;
+&lt;li&gt;Pattern Matching&lt;/li&gt;
+&lt;li&gt;Macros&lt;/li&gt;
+&lt;li&gt;DBS (&amp;quot;moto&amp;quot; operator)&lt;/li&gt;
+&lt;li&gt;Async and Generators&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Reference
+
+&lt;ul&gt;
+&lt;li&gt;EG builtin functions, macros, types, and classes&lt;/li&gt;
+&lt;li&gt;Node standard libaries (Filesystem, process, path, child_process)&lt;/li&gt;
+&lt;li&gt;Utility libraries (Underscore, Ramda)&lt;/li&gt;
+&lt;li&gt;Web libraries (jQuery)&lt;/li&gt;
+&lt;li&gt;View frameworks (Mithril.js, Cycle.js, React)&lt;/li&gt;
+&lt;li&gt;Server frameworks (Koa, Express)&lt;/li&gt;
+&lt;li&gt;Testings (Mocha, AVA, TAPE)&lt;/li&gt;
+&lt;li&gt;Add more!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Articles
+
+&lt;ul&gt;
+&lt;li&gt;EG vs {ES6/ES7, CoffeeScript, LiveScript, ...} series&lt;/li&gt;
+&lt;li&gt;Tips &amp;amp; Tricks series&lt;/li&gt;
+&lt;li&gt;Compile-to-js vision/purpose articles&lt;/li&gt;
+&lt;li&gt;Smaller module pieces should be articles (can be grown and moved to reference later)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;code&gt;Readme&lt;/code&gt; of &lt;a href=&quot;https://github.com/poole/poole&quot;&gt;Poole&lt;/a&gt; and &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;Hyde&lt;/a&gt; theme to learn more about the features.&lt;/p&gt;
+&lt;h3&gt;Contributing&lt;/h3&gt;
 
-&lt;h3&gt;Browser support&lt;/h3&gt;
+&lt;p&gt;Submit your ideas, issues, and pull requests on our github repo.  This is a big documenting project and I could use &lt;em&gt;all&lt;/em&gt; the help you&amp;#39;re willing to give!  If you feel that you&amp;#39;d be more interested in supporting me financially, perhaps I&amp;#39;d set up a patreon or a donation link (&lt;a href=&quot;mailto:madcap.russo+earl-academy@gmail.com&quot;&gt;let me know&lt;/a&gt;).  But first, I need to get &lt;em&gt;a ton&lt;/em&gt; of content up!&lt;/p&gt;
 
-&lt;p&gt;BlackDoc theme supports most modern browsers and only compatible with Internet Explorer 9 and above.&lt;/p&gt;
+&lt;h3&gt;Value&lt;/h3&gt;
 
-&lt;h3&gt;Download&lt;/h3&gt;
+&lt;p&gt;Earl Grey is an incredibly powerful, highly expressive, and fun-to-write language.  In our present day world of powerful computers in the palms of our hands, any minor performance hit is really neglible compared to productivity gained or just simply the joy of writing in a language that was built &lt;em&gt;for&lt;/em&gt; programmers.&lt;/p&gt;
 
-&lt;p&gt;BlackDoc is a free Jekyll theme and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/karloespiritu/BlackDoc&quot;&gt;GitHub repository&lt;/a&gt; to download.&lt;/p&gt;
+&lt;p&gt;That being said, the performance of Earl Grey would only be noticeable on performance-critical highly computationally intense programs which you wouldn&amp;#39;t likely consider Earl Grey for anyways.  The additional weight of Earl Grey on the web is minor and much of the functionality gained by using Earl Grey means less utility libraries are needed to write expressive code.&lt;/p&gt;
 
-&lt;p&gt;Cheers!&lt;/p&gt;
+&lt;p&gt;I&amp;#39;d like to share an example from Earl Grey&amp;#39;s github repo that is a fun example of using Earl Grey&amp;#39;s &lt;code&gt;match&lt;/code&gt; keyword and a few other neat features of Earl-Grey along the way:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-earl-grey&quot; data-lang=&quot;earl-grey&quot;&gt;&lt;span class=&quot;k k-Control&quot;&gt;match &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;thing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;The thing is zero&amp;quot;&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;The thing is negative&amp;quot;&lt;/span&gt;
+   &lt;span class=&quot;s&quot;&gt;R&amp;quot;hello (.*)&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;;; note: R&amp;quot;...&amp;quot; is a regular expression&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;The thing is saying hello&amp;#39;&lt;/span&gt;
+   &lt;span class=&quot;kt&quot;&gt;Number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k k-Control&quot;&gt;or &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;A number or a string&amp;quot;&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;An array of 3 things, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;The thing has a &amp;quot;name&amp;quot; field&amp;#39;&lt;/span&gt;
+   &lt;span class=&quot;kp&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;I don&amp;#39;t know what the thing is!&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If that looks interesting to you, take a look around!  If that looks really confusing, also take a look around (but maybe start at the Earl Grey homepage).&lt;/p&gt;
 </content>
  </entry>
  
@@ -96,16 +131,60 @@
 &lt;h3&gt;Code&lt;/h3&gt;
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-earl-grey&quot; data-lang=&quot;earl-grey&quot;&gt;&lt;span class=&quot;k k-Control&quot;&gt;globals &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;angular&lt;/span&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
+&lt;span class=&quot;k k-Control&quot;&gt;inline-macro &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;annotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`{^match, ^body}`):&lt;/span&gt;
+&lt;span class=&quot;sb&quot;&gt;   arg and #symbol{name} -&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;sb&quot;&gt;      `{^=name, ^arg -&amp;gt; ^body}`&lt;/span&gt;
+   &lt;span class=&quot;n n-Symbol&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;k k-Control&quot;&gt;and &lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;#data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;argsyms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nn&quot;&gt;#data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;argsyms&lt;/span&gt; &lt;span class=&quot;k k-Control&quot;&gt;each &lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;#symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;#value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
+        &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;args -&amp;gt; ^body`&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;countryApp&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;angular&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;countryApp&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ngRoute&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 
-&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;k k-Control&quot;&gt;chain &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;countryApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;vi&quot;&gt;@config&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;annotate &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$routeProvider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+         &lt;span class=&quot;n n-Symbol&quot;&gt;$routeProvider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;route&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;$routeProvider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n n-Field&quot;&gt;when&lt;/span&gt;
+         &lt;span class=&quot;k k-Control&quot;&gt;chain &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$routeProvider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;vi&quot;&gt;@route&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+               &lt;span class=&quot;nv&quot;&gt;templateUrl&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;country-list.html&amp;quot;&lt;/span&gt;
+               &lt;span class=&quot;nv&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;CountryListCtrl&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;vi&quot;&gt;@route&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/:countryName&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+               &lt;span class=&quot;nv&quot;&gt;templateUrl&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;country-detail.html&amp;quot;&lt;/span&gt;
+               &lt;span class=&quot;nv&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;CountryDetailCtrl&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;vi&quot;&gt;@otherwise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+               &lt;span class=&quot;nv&quot;&gt;redirectTo&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
+   &lt;span class=&quot;vi&quot;&gt;@factory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;countries&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;annotate &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;cb&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k k-Control&quot;&gt;chain &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$http&lt;/span&gt;
+               &lt;span class=&quot;vi&quot;&gt;@get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;countries.json&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+               &lt;span class=&quot;vi&quot;&gt;@success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
+               &lt;span class=&quot;k k-Control&quot;&gt;chain &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$http&lt;/span&gt;
+                  &lt;span class=&quot;vi&quot;&gt;@get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;countries.json&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                  &lt;span class=&quot;vi&quot;&gt;@success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;country&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;where&lt;/span&gt;
+                     &lt;span class=&quot;nv&quot;&gt;country&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+                        &lt;span class=&quot;n n-Symbol&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n n-Field&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;name&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;vi&quot;&gt;@controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CountryListCtrl&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;annotate &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;countries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}:&lt;/span&gt;
+         &lt;span class=&quot;n n-Symbol&quot;&gt;countries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+            &lt;span class=&quot;n n-Symbol&quot;&gt;countries&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;countries&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;countries&lt;/span&gt;
+
+   &lt;span class=&quot;vi&quot;&gt;@controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;CountryDetailCtrl&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;annotate &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;$routeParams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;countries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}:&lt;/span&gt;
+         &lt;span class=&quot;n n-Symbol&quot;&gt;countries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;$routeParams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n n-Field&quot;&gt;countryName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;with&lt;/span&gt;
+            &lt;span class=&quot;n n-Symbol&quot;&gt;country&lt;/span&gt;   &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;country&lt;/span&gt;   &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;country&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
 
 &lt;h3&gt;Gists via GitHub Pages&lt;/h3&gt;
@@ -201,21 +280,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="https://madcapjake.github.io/earl-academy/2012/02/06/whats-jekyll/"/>
-   <updated>2012-02-06T00:00:00-06:00</updated>
-   <id>https://madcapjake.github.io/earl-academy/2012/02/06/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  

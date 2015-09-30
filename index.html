@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="/earl-academy/public/css/syntax.css">
   <link rel="stylesheet" href="/earl-academy/public/css/blackdoc.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=EB+Garamond">
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=EB+Garamond"> -->
+  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/earl-academy/public/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="/earl-academy/public/favicon.ico">
@@ -49,6 +50,23 @@
       
 
       
+
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+              <a class="sidebar-nav-item" href="/earl-academy/about/">About</a>
+            
+          
+        
+      
+        
       
         
           
@@ -56,22 +74,47 @@
       
         
           
-            <a class="sidebar-nav-item" href="/earl-academy/about/">About</a>
-          
-        
-      
-        
-      
-        
+            
           
         
       
         
           
-            <a class="sidebar-nav-item" href="/earl-academy/styles/">Theme Styles</a>
+            
+              <a class="sidebar-nav-item" href="/earl-academy/styles/">Theme Styles</a>
+            
           
         
       
+
+      <details >
+        <summary>Tutorials</summary>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+              <a class="side-bar-nav-item" href="/earl-academy/tutorial/basics/">Basics</a>
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      </details>
 
       <a class="sidebar-nav-item" href="https://github.com/madcapjake/earl-academy/archive/master.zip">Download</a>
       <hr>
@@ -89,50 +132,85 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/earl-academy/2015/05/14/introducing-blackdoc/">
-        Introducing BlackDoc
+      <a href="/earl-academy/2015/09/29/introducing-earl-academy/">
+        Welcome New Earlites!
       </a>
     </h1>
 
-    <span class="post-date">14 May 2015</span>
+    <span class="post-date">29 Sep 2015</span>
 
-    <p>BlackDoc is a two-column <a href="http://jekyllrb.com">Jekyll</a> theme that&#39;s ideal for websites that require a master-detail layout for viewing of content. It&#39;s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler, and the <a href="http://hyde.getpoole.com">Hyde</a> theme.</p>
+    <p>Earl Academy is a collection of tutorials, a reference manual, and a series of articles on tooling, interesting modules and the usage of <a href="https://breuleux.github.io/earl-grey/">Earl Grey</a> in general.  </p>
 
-<p>I needed a two-column layout with a scrolling sidebar to publish my <a href="http://karloespiritu.com/cheatsheets">code cheatsheets</a>, and found the <a href="http://hyde.getpoole.com">Hyde</a> Jekyll theme to be a good starting theme. To complement the color scheme of my main <a href="http://karloespiritu.com">website</a>, I customised the theme to make it look great in black background and changed the sidebar to display scrolling content. I created this theme because I can&#39;t seem to find any good Jekyll theme with a master-detail layout. Hopefully, someone will find this useful as well in their own projects.</p>
+<p>Earl Grey is a highly expressive and fun compile-to-js language.  Its syntax is similar to Python&#39;s but with a few unique elements and a heaping serving of JavaScript in that you can access Node&#39;s standard API.  There is so much that I want to write about this lovely little language and I&#39;d like to share this material with you!  Install Earl Grey, fire up the <code>earl</code> <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> and hack on something in a fun futureproof language!</p>
 
-<h3>Built on Poole</h3>
+<p>Check out Earl Grey&#39;s page on <a href="https://breuleux.github.io/earl-grey/use.html">use</a> and read through the <a href="https://breuleux.github.io/earl-grey/doc.html">learn</a> page while you&#39;re there. This site will cover much of what&#39;s there but it&#39;s good to read the original source and then come here to solidify your knowledge.  I want this site to include details on the use of the node standard libraries and also popular npm packages (or often, how you can avoid using some common utility packages).</p>
 
-<p>Poole is the Jekyll Butler, serving as a foundation for creating Jekyll themes. Poole-based themes, such as BlackDoc here, include the following:</p>
+<h3>Goals</h3>
 
-<ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting using Pygments (the Python-based code snippet highlighter)</li>
-</ul>
-
-<h3>BlackDoc Features</h3>
-
-<p>In addition to the features of <a href="http://getpoole.com">Poole</a> and <a href="http://hyde.getpoole.com">Hyde</a>, BlackDoc theme adds the following:</p>
+<p>This site will contain a lot of material--but at first, it&#39;s good to layout what the vision is.  If anyone is interested in contributing, this is a good overview of what needs to be done and perhaps I&#39;ll even come back and update this with the current status of various elements of the site.</p>
 
 <ul>
-<li>Scrolling sidebar with a thin scrollbar to allow displaying of numerous top-level content.</li>
-<li>Elements and classes of the Hyde theme were updated to look great in black background. Check out the <a href="styles">Theme Styles</a> to see the stylings used in the theme.</li>
+<li>Tutorials
+
+<ul>
+<li>Basics (literal data, conditionals, functions)</li>
+<li>Objects and Classes</li>
+<li>Pattern Matching</li>
+<li>Macros</li>
+<li>DBS (&quot;moto&quot; operator)</li>
+<li>Async and Generators</li>
+</ul></li>
+<li>Reference
+
+<ul>
+<li>EG builtin functions, macros, types, and classes</li>
+<li>Node standard libaries (Filesystem, process, path, child_process)</li>
+<li>Utility libraries (Underscore, Ramda)</li>
+<li>Web libraries (jQuery)</li>
+<li>View frameworks (Mithril.js, Cycle.js, React)</li>
+<li>Server frameworks (Koa, Express)</li>
+<li>Testings (Mocha, AVA, TAPE)</li>
+<li>Add more!</li>
+</ul></li>
+<li>Articles
+
+<ul>
+<li>EG vs {ES6/ES7, CoffeeScript, LiveScript, ...} series</li>
+<li>Tips &amp; Tricks series</li>
+<li>Compile-to-js vision/purpose articles</li>
+<li>Smaller module pieces should be articles (can be grown and moved to reference later)</li>
+</ul></li>
 </ul>
 
-<p>Check out the <code>Readme</code> of <a href="https://github.com/poole/poole">Poole</a> and <a href="https://github.com/poole/hyde">Hyde</a> theme to learn more about the features.</p>
+<h3>Contributing</h3>
 
-<h3>Browser support</h3>
+<p>Submit your ideas, issues, and pull requests on our github repo.  This is a big documenting project and I could use <em>all</em> the help you&#39;re willing to give!  If you feel that you&#39;d be more interested in supporting me financially, perhaps I&#39;d set up a patreon or a donation link (<a href="mailto:madcap.russo+earl-academy@gmail.com">let me know</a>).  But first, I need to get <em>a ton</em> of content up!</p>
 
-<p>BlackDoc theme supports most modern browsers and only compatible with Internet Explorer 9 and above.</p>
+<h3>Value</h3>
 
-<h3>Download</h3>
+<p>Earl Grey is an incredibly powerful, highly expressive, and fun-to-write language.  In our present day world of powerful computers in the palms of our hands, any minor performance hit is really neglible compared to productivity gained or just simply the joy of writing in a language that was built <em>for</em> programmers.</p>
 
-<p>BlackDoc is a free Jekyll theme and hosted with GitHub. Head to the <a href="https://github.com/karloespiritu/BlackDoc">GitHub repository</a> to download.</p>
+<p>That being said, the performance of Earl Grey would only be noticeable on performance-critical highly computationally intense programs which you wouldn&#39;t likely consider Earl Grey for anyways.  The additional weight of Earl Grey on the web is minor and much of the functionality gained by using Earl Grey means less utility libraries are needed to write expressive code.</p>
 
-<p>Cheers!</p>
+<p>I&#39;d like to share an example from Earl Grey&#39;s github repo that is a fun example of using Earl Grey&#39;s <code>match</code> keyword and a few other neat features of Earl-Grey along the way:</p>
+<div class="highlight"><pre><code class="language-earl-grey" data-lang="earl-grey"><span class="k k-Control">match </span><span class="n n-Symbol">thing</span><span class="p">:</span>
+   <span class="mi">0</span> <span class="nf">-&gt;</span>
+      <span class="k k-Control">print </span><span class="s">&quot;The thing is zero&quot;</span>
+   <span class="o">&lt;</span> <span class="mi">0</span> <span class="nf">-&gt;</span>
+      <span class="k k-Control">print </span><span class="s">&quot;The thing is negative&quot;</span>
+   <span class="s">R&quot;hello (.*)&quot;</span><span class="o">?</span> <span class="n n-Symbol">x</span> <span class="nf">-&gt;</span>
+      <span class="c">;; note: R&quot;...&quot; is a regular expression</span>
+      <span class="k k-Control">print </span><span class="s">&#39;The thing is saying hello&#39;</span>
+   <span class="kt">Number</span><span class="o">?</span> <span class="n n-Symbol">x</span> <span class="k k-Control">or </span><span class="kt">String</span><span class="o">?</span> <span class="n n-Symbol">x</span> <span class="nf">-&gt;</span>
+      <span class="k k-Control">print </span><span class="s">&quot;A number or a string&quot;</span>
+   <span class="p">{</span><span class="n n-Symbol">x</span><span class="p">,</span> <span class="n n-Symbol">y</span><span class="p">,</span> <span class="n n-Symbol">z</span><span class="p">}</span> <span class="nf">-&gt;</span>
+      <span class="k k-Control">print </span><span class="s">&#39;An array of 3 things, </span><span class="si">{</span><span class="n n-Symbol">x</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n n-Symbol">y</span><span class="si">}</span><span class="s"> and </span><span class="si">{</span><span class="n n-Symbol">z</span><span class="si">}</span><span class="s">&#39;</span>
+   <span class="p">{</span><span class="ow">=</span><span class="o">&gt;</span> <span class="n n-Symbol">name</span><span class="p">}</span> <span class="nf">-&gt;</span>
+      <span class="k k-Control">print </span><span class="s">&#39;The thing has a &quot;name&quot; field&#39;</span>
+   <span class="kp">else</span> <span class="nf">-&gt;</span>
+      <span class="k k-Control">print </span><span class="s">&quot;I don&#39;t know what the thing is!&quot;</span>
+</code></pre></div>
+<p>If that looks interesting to you, take a look around!  If that looks really confusing, also take a look around (but maybe start at the Earl Grey homepage).</p>
 
   </div>
   
@@ -179,16 +257,60 @@
 <h3>Code</h3>
 
 <p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus mus.</p>
+<div class="highlight"><pre><code class="language-earl-grey" data-lang="earl-grey"><span class="k k-Control">globals </span><span class="n n-Symbol">angular</span>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+<span class="k k-Control">inline-macro </span><span class="n n-Symbol">annotate</span><span class="p">(</span><span class="sb">`{^match, ^body}`):</span>
+<span class="sb">   arg and #symbol{name} -&gt;</span>
+<span class="sb">      `{^=name, ^arg -&gt; ^body}`</span>
+   <span class="n n-Symbol">args</span> <span class="k k-Control">and </span><span class="nn">#data</span><span class="p">{</span><span class="o">*</span><span class="n n-Symbol">argsyms</span><span class="p">}</span> <span class="nf">-&gt;</span>
+      <span class="nn">#data</span><span class="p">{</span>
+        <span class="o">*</span><span class="p">[</span><span class="n n-Symbol">argsyms</span> <span class="k k-Control">each </span><span class="nn">#symbol</span><span class="p">{</span><span class="n n-Symbol">arg</span><span class="p">}</span> <span class="nf">-&gt;</span> <span class="nn">#value</span><span class="p">{</span><span class="n n-Symbol">arg</span><span class="p">}]</span>
+        <span class="sb">`</span><span class="se">^</span><span class="sb">args -&gt; ^body`</span>
+      <span class="p">}</span>
 
-<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;return a + b&quot;</span><span class="p">);</span>
+<span class="nv">countryApp</span> <span class="ow">=</span> <span class="n n-Symbol">angular</span><span class="p">.</span><span class="nf">module</span><span class="p">(</span><span class="s">&quot;countryApp&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;ngRoute&quot;</span><span class="p">})</span>
 
-<span class="c1">// Call the function</span>
-<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span></code></pre></div>
+<span class="k k-Control">chain </span><span class="n n-Symbol">countryApp</span><span class="p">:</span>
+   <span class="vi">@config</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="n n-Symbol">$routeProvider</span><span class="p">:</span>
+         <span class="n n-Symbol">$routeProvider</span><span class="p">.</span><span class="nv">route</span> <span class="ow">=</span> <span class="n n-Symbol">$routeProvider</span><span class="p">.</span><span class="n n-Field">when</span>
+         <span class="k k-Control">chain </span><span class="n n-Symbol">$routeProvider</span><span class="p">:</span>
+            <span class="vi">@route</span> <span class="s">&quot;/&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nv">templateUrl</span> <span class="ow">=</span> <span class="s">&quot;country-list.html&quot;</span>
+               <span class="nv">controller</span> <span class="ow">=</span> <span class="s">&quot;CountryListCtrl&quot;</span>
+            <span class="p">}</span>
+            <span class="vi">@route</span> <span class="s">&quot;/:countryName&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nv">templateUrl</span> <span class="ow">=</span> <span class="s">&quot;country-detail.html&quot;</span>
+               <span class="nv">controller</span> <span class="ow">=</span> <span class="s">&quot;CountryDetailCtrl&quot;</span>
+            <span class="p">}</span>
+            <span class="vi">@otherwise</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nv">redirectTo</span> <span class="ow">=</span> <span class="s">&quot;/&quot;</span>
+            <span class="p">}</span>
 
+   <span class="vi">@factory</span><span class="p">(</span><span class="s">&quot;countries&quot;</span><span class="p">)</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="n n-Symbol">$http</span><span class="p">:</span>
+         <span class="p">{</span>
+            <span class="nv">list</span> <span class="ow">=</span> <span class="n n-Symbol">cb</span> <span class="nf">-&gt;</span> <span class="k k-Control">chain </span><span class="n n-Symbol">$http</span>
+               <span class="vi">@get</span><span class="p">(</span><span class="s">&quot;countries.json&quot;</span><span class="p">)</span>
+               <span class="vi">@success</span><span class="p">(</span><span class="n n-Symbol">cb</span><span class="p">)</span>
+            <span class="nv">find</span> <span class="ow">=</span> <span class="p">(</span><span class="n n-Symbol">name</span><span class="p">,</span> <span class="n n-Symbol">cb</span><span class="p">)</span> <span class="nf">-&gt;</span>
+               <span class="k k-Control">chain </span><span class="n n-Symbol">$http</span>
+                  <span class="vi">@get</span><span class="p">(</span><span class="s">&quot;countries.json&quot;</span><span class="p">)</span>
+                  <span class="vi">@success</span><span class="p">:</span> <span class="n n-Symbol">data</span> <span class="nf">-&gt;</span> <span class="n n-Symbol">cb</span><span class="p">(</span><span class="n n-Symbol">country</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="ow">where</span>
+                     <span class="nv">country</span> <span class="ow">=</span> <span class="n n-Symbol">data</span><span class="p">.</span><span class="nf">filter</span> <span class="ow">with</span>
+                        <span class="n n-Symbol">e</span> <span class="nf">-&gt;</span> <span class="n n-Symbol">e</span><span class="p">.</span><span class="n n-Field">name</span> <span class="ow">===</span> <span class="n n-Symbol">name</span>
+         <span class="p">}</span>
+
+   <span class="vi">@controller</span><span class="p">(</span><span class="s">&quot;CountryListCtrl&quot;</span><span class="p">)</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="p">{</span><span class="n n-Symbol">$scope</span><span class="p">,</span> <span class="n n-Symbol">countries</span><span class="p">}:</span>
+         <span class="n n-Symbol">countries</span><span class="p">.</span><span class="nf">list</span> <span class="ow">with</span>
+            <span class="n n-Symbol">countries</span> <span class="nf">-&gt;</span> <span class="n n-Symbol">$scope</span><span class="p">.</span><span class="nv">countries</span> <span class="ow">=</span> <span class="n n-Symbol">countries</span>
+
+   <span class="vi">@controller</span><span class="p">(</span><span class="s">&quot;CountryDetailCtrl&quot;</span><span class="p">)</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="p">{</span><span class="n n-Symbol">$scope</span><span class="p">,</span> <span class="n n-Symbol">$routeParams</span><span class="p">,</span> <span class="n n-Symbol">countries</span><span class="p">}:</span>
+         <span class="n n-Symbol">countries</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n n-Symbol">$routeParams</span><span class="p">.</span><span class="n n-Field">countryName</span><span class="p">)</span> <span class="ow">with</span>
+            <span class="n n-Symbol">country</span>   <span class="nf">-&gt;</span> <span class="n n-Symbol">$scope</span><span class="p">.</span><span class="nv">country</span>   <span class="ow">=</span> <span class="n n-Symbol">country</span>
+</code></pre></div>
 <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
 
 <h3>Gists via GitHub Pages</h3>
@@ -284,25 +406,6 @@
 <hr>
 
 <p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/earl-academy/2012/02/06/whats-jekyll/">
-        What's Jekyll?
-      </a>
-    </h1>
-
-    <span class="post-date">06 Feb 2012</span>
-
-    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project&#39;s readme</a>:</p>
-
-<blockquote>
-<p>Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
-
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
 
   </div>
   

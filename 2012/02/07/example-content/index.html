@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="/earl-academy/public/css/syntax.css">
   <link rel="stylesheet" href="/earl-academy/public/css/blackdoc.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=EB+Garamond">
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=EB+Garamond"> -->
+  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/earl-academy/public/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="/earl-academy/public/favicon.ico">
@@ -49,6 +50,23 @@
       
 
       
+
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+              <a class="sidebar-nav-item" href="/earl-academy/about/">About</a>
+            
+          
+        
+      
+        
       
         
           
@@ -56,22 +74,47 @@
       
         
           
-            <a class="sidebar-nav-item" href="/earl-academy/about/">About</a>
-          
-        
-      
-        
-      
-        
+            
           
         
       
         
           
-            <a class="sidebar-nav-item" href="/earl-academy/styles/">Theme Styles</a>
+            
+              <a class="sidebar-nav-item" href="/earl-academy/styles/">Theme Styles</a>
+            
           
         
       
+
+      <details >
+        <summary>Tutorials</summary>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+              <a class="side-bar-nav-item" href="/earl-academy/tutorial/basics/">Basics</a>
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      </details>
 
       <a class="sidebar-nav-item" href="https://github.com/madcapjake/earl-academy/archive/master.zip">Download</a>
       <hr>
@@ -122,16 +165,60 @@
 <h3>Code</h3>
 
 <p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus mus.</p>
+<div class="highlight"><pre><code class="language-earl-grey" data-lang="earl-grey"><span class="k k-Control">globals </span><span class="n n-Symbol">angular</span>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+<span class="k k-Control">inline-macro </span><span class="n n-Symbol">annotate</span><span class="p">(</span><span class="sb">`{^match, ^body}`):</span>
+<span class="sb">   arg and #symbol{name} -&gt;</span>
+<span class="sb">      `{^=name, ^arg -&gt; ^body}`</span>
+   <span class="n n-Symbol">args</span> <span class="k k-Control">and </span><span class="nn">#data</span><span class="p">{</span><span class="o">*</span><span class="n n-Symbol">argsyms</span><span class="p">}</span> <span class="nf">-&gt;</span>
+      <span class="nn">#data</span><span class="p">{</span>
+        <span class="o">*</span><span class="p">[</span><span class="n n-Symbol">argsyms</span> <span class="k k-Control">each </span><span class="nn">#symbol</span><span class="p">{</span><span class="n n-Symbol">arg</span><span class="p">}</span> <span class="nf">-&gt;</span> <span class="nn">#value</span><span class="p">{</span><span class="n n-Symbol">arg</span><span class="p">}]</span>
+        <span class="sb">`</span><span class="se">^</span><span class="sb">args -&gt; ^body`</span>
+      <span class="p">}</span>
 
-<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;return a + b&quot;</span><span class="p">);</span>
+<span class="nv">countryApp</span> <span class="ow">=</span> <span class="n n-Symbol">angular</span><span class="p">.</span><span class="nf">module</span><span class="p">(</span><span class="s">&quot;countryApp&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;ngRoute&quot;</span><span class="p">})</span>
 
-<span class="c1">// Call the function</span>
-<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span></code></pre></div>
+<span class="k k-Control">chain </span><span class="n n-Symbol">countryApp</span><span class="p">:</span>
+   <span class="vi">@config</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="n n-Symbol">$routeProvider</span><span class="p">:</span>
+         <span class="n n-Symbol">$routeProvider</span><span class="p">.</span><span class="nv">route</span> <span class="ow">=</span> <span class="n n-Symbol">$routeProvider</span><span class="p">.</span><span class="n n-Field">when</span>
+         <span class="k k-Control">chain </span><span class="n n-Symbol">$routeProvider</span><span class="p">:</span>
+            <span class="vi">@route</span> <span class="s">&quot;/&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nv">templateUrl</span> <span class="ow">=</span> <span class="s">&quot;country-list.html&quot;</span>
+               <span class="nv">controller</span> <span class="ow">=</span> <span class="s">&quot;CountryListCtrl&quot;</span>
+            <span class="p">}</span>
+            <span class="vi">@route</span> <span class="s">&quot;/:countryName&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nv">templateUrl</span> <span class="ow">=</span> <span class="s">&quot;country-detail.html&quot;</span>
+               <span class="nv">controller</span> <span class="ow">=</span> <span class="s">&quot;CountryDetailCtrl&quot;</span>
+            <span class="p">}</span>
+            <span class="vi">@otherwise</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nv">redirectTo</span> <span class="ow">=</span> <span class="s">&quot;/&quot;</span>
+            <span class="p">}</span>
 
+   <span class="vi">@factory</span><span class="p">(</span><span class="s">&quot;countries&quot;</span><span class="p">)</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="n n-Symbol">$http</span><span class="p">:</span>
+         <span class="p">{</span>
+            <span class="nv">list</span> <span class="ow">=</span> <span class="n n-Symbol">cb</span> <span class="nf">-&gt;</span> <span class="k k-Control">chain </span><span class="n n-Symbol">$http</span>
+               <span class="vi">@get</span><span class="p">(</span><span class="s">&quot;countries.json&quot;</span><span class="p">)</span>
+               <span class="vi">@success</span><span class="p">(</span><span class="n n-Symbol">cb</span><span class="p">)</span>
+            <span class="nv">find</span> <span class="ow">=</span> <span class="p">(</span><span class="n n-Symbol">name</span><span class="p">,</span> <span class="n n-Symbol">cb</span><span class="p">)</span> <span class="nf">-&gt;</span>
+               <span class="k k-Control">chain </span><span class="n n-Symbol">$http</span>
+                  <span class="vi">@get</span><span class="p">(</span><span class="s">&quot;countries.json&quot;</span><span class="p">)</span>
+                  <span class="vi">@success</span><span class="p">:</span> <span class="n n-Symbol">data</span> <span class="nf">-&gt;</span> <span class="n n-Symbol">cb</span><span class="p">(</span><span class="n n-Symbol">country</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="ow">where</span>
+                     <span class="nv">country</span> <span class="ow">=</span> <span class="n n-Symbol">data</span><span class="p">.</span><span class="nf">filter</span> <span class="ow">with</span>
+                        <span class="n n-Symbol">e</span> <span class="nf">-&gt;</span> <span class="n n-Symbol">e</span><span class="p">.</span><span class="n n-Field">name</span> <span class="ow">===</span> <span class="n n-Symbol">name</span>
+         <span class="p">}</span>
+
+   <span class="vi">@controller</span><span class="p">(</span><span class="s">&quot;CountryListCtrl&quot;</span><span class="p">)</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="p">{</span><span class="n n-Symbol">$scope</span><span class="p">,</span> <span class="n n-Symbol">countries</span><span class="p">}:</span>
+         <span class="n n-Symbol">countries</span><span class="p">.</span><span class="nf">list</span> <span class="ow">with</span>
+            <span class="n n-Symbol">countries</span> <span class="nf">-&gt;</span> <span class="n n-Symbol">$scope</span><span class="p">.</span><span class="nv">countries</span> <span class="ow">=</span> <span class="n n-Symbol">countries</span>
+
+   <span class="vi">@controller</span><span class="p">(</span><span class="s">&quot;CountryDetailCtrl&quot;</span><span class="p">)</span> <span class="ow">with</span>
+      <span class="k k-Control">annotate </span><span class="p">{</span><span class="n n-Symbol">$scope</span><span class="p">,</span> <span class="n n-Symbol">$routeParams</span><span class="p">,</span> <span class="n n-Symbol">countries</span><span class="p">}:</span>
+         <span class="n n-Symbol">countries</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n n-Symbol">$routeParams</span><span class="p">.</span><span class="n n-Field">countryName</span><span class="p">)</span> <span class="ow">with</span>
+            <span class="n n-Symbol">country</span>   <span class="nf">-&gt;</span> <span class="n n-Symbol">$scope</span><span class="p">.</span><span class="nv">country</span>   <span class="ow">=</span> <span class="n n-Symbol">country</span>
+</code></pre></div>
 <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
 
 <h3>Gists via GitHub Pages</h3>
@@ -236,18 +323,9 @@
     
       <li>
         <h3>
-          <a href="/2015/05/14/introducing-blackdoc/">
-            Introducing BlackDoc
-            <small>14 May 2015</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2012/02/06/whats-jekyll/">
-            What's Jekyll?
-            <small>06 Feb 2012</small>
+          <a href="/2015/09/29/introducing-earl-academy/">
+            Welcome New Earlites!
+            <small>29 Sep 2015</small>
           </a>
         </h3>
       </li>
