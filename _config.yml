@@ -11,7 +11,7 @@ title:            Earl Academy
 tagline:          Ex thea, scientia
 description:      "A collection of tutorials, reference materials and articles on the use of Earl Grey, a compile-to-js language."
 url:              https://madcapjake.github.io/earl-academy
-baseurl:          /
+baseurl:          /earl-academy/
 
 author:
   name:           'Jake Russo'
