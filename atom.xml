@@ -4,7 +4,7 @@
  <title>Earl Academy</title>
  <link href="https://madcapjake.github.io/earl-academy/atom.xml" rel="self"/>
  <link href="https://madcapjake.github.io/earl-academy/"/>
- <updated>2015-09-30T01:00:14-05:00</updated>
+ <updated>2015-09-30T13:49:56-05:00</updated>
  <id>https://madcapjake.github.io/earl-academy</id>
  <author>
    <name>Jake Russo</name>
@@ -82,7 +82,7 @@
    &lt;span class=&quot;kt&quot;&gt;Number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;k k-Control&quot;&gt;or &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
       &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;A number or a string&amp;quot;&lt;/span&gt;
    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;An array of 3 things, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;An array containing &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;
    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n n-Symbol&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
       &lt;span class=&quot;k k-Control&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;The thing has a &amp;quot;name&amp;quot; field&amp;#39;&lt;/span&gt;
    &lt;span class=&quot;kp&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&amp;gt;&lt;/span&gt;
@@ -191,8 +191,7 @@
 
 &lt;p&gt;Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.&lt;/p&gt;
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
 
