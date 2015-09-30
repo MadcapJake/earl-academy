@@ -59,7 +59,7 @@ match thing:
    Number? x or String? x ->
       print "A number or a string"
    {x, y, z} ->
-      print 'An array of 3 things, {x}, {y} and {z}'
+      print 'An array containing {x}, {y} and {z}'
    {=> name} ->
       print 'The thing has a "name" field'
    else ->

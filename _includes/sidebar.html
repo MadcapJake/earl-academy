@@ -3,6 +3,7 @@
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
+          <i class="fa fa-university"></i></br>
           {{ site.title }}
         </a>
       </h1>
@@ -34,13 +35,13 @@
         {% for node in pages_list %}
           {% if node.title != null %}
             {% if node.tags contains "tutorial" %}
-              <a class="side-bar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+              <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
             {% endif %}
           {% endif %}
         {% endfor %}
       </details>
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/master.zip">Download</a>
+      <a class="sidebar-nav-item" href="https://breuleux.github.io/earl-grey/">Earl Grey Site</a>
       <hr>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
