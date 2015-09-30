@@ -35,16 +35,62 @@ Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est 
 
 Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-{% highlight js %}
-// Example can be run directly in your JavaScript console
+```earl-grey
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+globals angular
 
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
+inline-macro annotate(`{^match, ^body}`):
+   arg and #symbol{name} ->
+      `{^=name, ^arg -> ^body}`
+   args and #data{*argsyms} ->
+      #data{
+        *[argsyms each #symbol{arg} -> #value{arg}]
+        `^args -> ^body`
+      }
+
+countryApp = angular.module("countryApp", {"ngRoute"})
+
+chain countryApp:
+   @config with
+      annotate $routeProvider:
+         $routeProvider.route = $routeProvider.when
+         chain $routeProvider:
+            @route "/": {
+               templateUrl = "country-list.html"
+               controller = "CountryListCtrl"
+            }
+            @route "/:countryName": {
+               templateUrl = "country-detail.html"
+               controller = "CountryDetailCtrl"
+            }
+            @otherwise: {
+               redirectTo = "/"
+            }
+
+   @factory("countries") with
+      annotate $http:
+         {
+            list = cb -> chain $http
+               @get("countries.json")
+               @success(cb)
+            find = (name, cb) ->
+               chain $http
+                  @get("countries.json")
+                  @success: data -> cb(country[0]) where
+                     country = data.filter with
+                        e -> e.name === name
+         }
+
+   @controller("CountryListCtrl") with
+      annotate {$scope, countries}:
+         countries.list with
+            countries -> $scope.countries = countries
+
+   @controller("CountryDetailCtrl") with
+      annotate {$scope, $routeParams, countries}:
+         countries.find($routeParams.countryName) with
+            country   -> $scope.country   = country
+```
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 

@@ -22,6 +22,11 @@ ______ _            _   ______
  * Scrollbar
  */
 
+@font-face {
+  font-family: jupiter;
+  src: url(/earl-academy/public/fonts/jupiter.tff)
+}
+
 
 /*
  * Global resets
@@ -39,25 +44,25 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'cinzel', serif;
   color: #aaa;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  font-family: 'EB Garamond', serif;
-  color: #50585D;
-  font-kerning: auto;
+  font-family: 'cinzel', serif;
+  color: #8C2F5E;
+  /*font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
-  font-synthesis: weight style;
+  font-synthesis: weight style;*/
 }
 
 a {
-  color: #ffeb99;
+  color: #D28CB0;
   transition: color ease 0.3s;
 }
 
 a:hover {
-  color: #caad00;
+  color: #AF5784;
 }
 
 .btn {
@@ -77,12 +82,12 @@ a:hover {
 }
 
 strong, b {
-  color: #848471;
+  color: #AA4139;
 }
 /* Code */
 
 code {
-  color: #993030;
+  color: #D4726A;
   white-space: pre-wrap;
   background-color: #222;
 }
@@ -193,7 +198,7 @@ tbody tr:nth-child(odd) th {
 
 /* Sidebar links */
 .sidebar a {
-  color: #caad00;
+  color: #8C2F5E;
 }
 
 /* About section */
@@ -274,7 +279,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #caad00;
+  color: #8C2F5E;
 }
 
 /*
@@ -406,4 +411,3 @@ a.sidebar-nav-item:focus {
 ::-webkit-scrollbar-thumb:hover {
   background:#7d7d7d;
 }
-
