@@ -16,4 +16,4 @@ Open sourced under the [MIT license](LICENSE.md).
 
 ## Thanks
 
-Thanks to @breuleux for creating [Earl Grey](http://breuleux.github.io/earl-grey/), [@karloespiritu](https://twitter.com/karloespiritu) for creating [BlackDoc](https://github.com/karloespiritu/BlackDoc) and [@mdo](https://twitter.com/mdo) for creating the awesome [Poole](http://getpoole.com) project.
+Thanks to [@breuleux](https://github.com/breuleux) for creating [Earl Grey](http://breuleux.github.io/earl-grey/), [@karloespiritu](https://twitter.com/karloespiritu) for creating [BlackDoc](https://github.com/karloespiritu/BlackDoc) and [@mdo](https://twitter.com/mdo) for creating the awesome [Poole](http://getpoole.com) project.
