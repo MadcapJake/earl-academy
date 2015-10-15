@@ -13,9 +13,9 @@ Earl Grey is a programming language that compiles down to JavaScript for use on 
 
 > It's important to remember that even though Earl Grey shares some syntactic qualities of Python, it still has the underlying programmatic interface (builtin functions, types, etc.) of JavaScript.
 
-Earl Grey has working implementations of much of the functionality provided to JavaScript by the ES2015 specification and in fact many features planned for "ES7".  Earl Grey provides a compiler that can compile Earl Grey files (using the `eg` extension), to either "ES5" (browser-compatible) or "ES6" (the new ES2015 specification).
+Earl Grey has working implementations of much of the functionality provided to JavaScript by the ES2015 specification and in fact many features planned for "ES7".  Earl Grey provides a compiler that can compile Earl Grey files (using the `eg` extension), to either "ES5" (browser-compatible) or "ES6" (the new ES2015 specification) JavaScript.  There is drop-in tooling available for many of the usual build tools.
 
-Earl Grey also provides several things beyond what is planned for the future of EcmaScript.  There is a builtin document-building DSL, a macro system, powerful pattern matching, and several other syntactic flourishes that really allow Earl Grey to stand separate from JavaScript and in fact many of the compile-to-js languages.
+Earl Grey also provides several things beyond what is planned for the future of EcmaScript.  There is a builtin document-building DSL, a macro system, powerful pattern matching, and several other syntactic flourishes that really allow Earl Grey to stand separate from JavaScript and in fact many of the compile-to-js languages.  I hope, through Earl Academy, you can come to enjoy Earl Grey as much as I do!
 
 ## About Earl Academy
 

@@ -45,6 +45,8 @@ Earl Grey is an incredibly powerful, highly expressive, and fun-to-write languag
 
 That being said, the performance of Earl Grey would only be noticeable on performance-critical highly computationally intense programs which you wouldn't likely consider Earl Grey for anyways.  The additional weight of Earl Grey on the web is minor and much of the functionality gained by using Earl Grey means less utility libraries are needed to write expressive code.
 
+With the finalization of ES2015, I think many JavaScript programmers are questioning whether it makes sense to continue or begin using a compile-to-js language but I think this is exactly where programmers should be.  Just as CoffeeScript inspired ES6/ES7, perhaps Earl Grey will be the language that inspires ES8/ES9.  Only time will tell, but after working through Earl Academy, I think you will see there is still much room to improve and enhance the JS experience.
+
 I'd like to share an example from Earl Grey's github repo that is a fun example of using Earl Grey's `match` keyword and a few other neat features of Earl-Grey along the way:
 
 ```earl-grey

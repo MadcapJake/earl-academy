@@ -41,9 +41,31 @@
         {% endfor %}
       </details>
 
-      <a class="sidebar-nav-item" href="https://breuleux.github.io/earl-grey/">Earl Grey Site</a>
+      <details {% if page.tags contains "reference" %}open{% endif %}>
+        <summary>References</summary>
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.tags contains "reference" %}
+              <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </details>
+
       <hr>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <a href="https://breuleux.github.io/earl-grey/">
+        <img src="https://img.shields.io/badge/Earl-Grey-lightgrey.png?style=flat-square" alt="Earl Grey Site" />
+      </a>
+      <a href="{{ site.github.repo }}/issues">
+        <img src="https://img.shields.io/github/issues/madcapjake/earl-academy.png?style=flat-square" alt="GH Issues" />
+      </a>
+      <a href="{{ site.github.repo }}/blob/master/LICENSE.md">
+        <img src="https://img.shields.io/github/license/madcapjake/earl-academy.png?style=flat-square" alt="MIT License" />
+      </a>
+      <a href="{{ site.github.repo }}/stargazers">
+        <img src="https://img.shields.io/github/stars/madcapjake/earl-academy.png?style=social&label=Star" alt="GH Stars" />
+      </a>
+
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
