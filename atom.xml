@@ -4,7 +4,7 @@
  <title>Earl Academy</title>
  <link href="https://madcapjake.github.io/earl-academy/atom.xml" rel="self"/>
  <link href="https://madcapjake.github.io/earl-academy/"/>
- <updated>2015-09-30T13:49:56-05:00</updated>
+ <updated>2015-10-14T22:16:57-05:00</updated>
  <id>https://madcapjake.github.io/earl-academy</id>
  <author>
    <name>Jake Russo</name>
@@ -69,6 +69,8 @@
 &lt;p&gt;Earl Grey is an incredibly powerful, highly expressive, and fun-to-write language.  In our present day world of powerful computers in the palms of our hands, any minor performance hit is really neglible compared to productivity gained or just simply the joy of writing in a language that was built &lt;em&gt;for&lt;/em&gt; programmers.&lt;/p&gt;
 
 &lt;p&gt;That being said, the performance of Earl Grey would only be noticeable on performance-critical highly computationally intense programs which you wouldn&amp;#39;t likely consider Earl Grey for anyways.  The additional weight of Earl Grey on the web is minor and much of the functionality gained by using Earl Grey means less utility libraries are needed to write expressive code.&lt;/p&gt;
+
+&lt;p&gt;With the finalization of ES2015, I think many JavaScript programmers are questioning whether it makes sense to continue or begin using a compile-to-js language but I think this is exactly where programmers should be.  Just as CoffeeScript inspired ES6/ES7, perhaps Earl Grey will be the language that inspires ES8/ES9.  Only time will tell, but after working through Earl Academy, I think you will see there is still much room to improve and enhance the JS experience.&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;d like to share an example from Earl Grey&amp;#39;s github repo that is a fun example of using Earl Grey&amp;#39;s &lt;code&gt;match&lt;/code&gt; keyword and a few other neat features of Earl-Grey along the way:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-earl-grey&quot; data-lang=&quot;earl-grey&quot;&gt;&lt;span class=&quot;k k-Control&quot;&gt;match &lt;/span&gt;&lt;span class=&quot;n n-Symbol&quot;&gt;thing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -191,7 +193,8 @@
 
 &lt;p&gt;Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.&lt;/p&gt;
 
-&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
 

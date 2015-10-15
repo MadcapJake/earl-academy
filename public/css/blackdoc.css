@@ -202,6 +202,10 @@ tbody tr:nth-child(odd) th {
 .sidebar summary {
   color: #8C2F5E;
 }
+.sidebar summary:focus {
+  font-weight: bold;
+  outline: 0 !important;
+}
 
 /* About section */
 .sidebar-about h1 {
